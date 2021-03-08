@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+     body{
+      background: url(23.jpg);
+      background-size: cover ;
+     }
+</style>
+<body>
+    <script>
+        function Money(baht) {
+       var dollar;
+       dollar = (baht/40.60);
+       document.getElementById("disp").innerHTML= dollar +"$";
+        }
+    </script>
+    <table  align="center">
+        <tr>
+            <td>
+                <label for="Money">Money</label>
+            </td>
+            <td>
+                <input type="number" id="number"> <button onclick="Money(number.value)">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <div id="disp"></div>
+</body>
+</html>
